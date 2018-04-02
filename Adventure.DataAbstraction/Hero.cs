@@ -6,6 +6,14 @@ namespace Adventure.DataAbstraction
 {
     public class Hero
     {
+        public static Dictionary<int, string> classNames = new Dictionary<int, string>() {
+            { 1, "Warrior" },
+            { 2, "Healer" },
+            { 3, "Mage" },
+            { 4, "Paladin" },
+            { 5, "Rogue" }
+        };
+
         string name;
         public string Name
         {
@@ -36,22 +44,15 @@ namespace Adventure.DataAbstraction
         {
             get
             {
-                switch (classId)
-                {
-                    case 1:
-                        return "Warrior";
-                    case 2:
-                        return "Healer";
-                    case 3:
-                        return "Mage";
-                    case 4:
-                        return "Paladin";
-                    case 5:
-                        return "Rogue";
-                    default:
-                        return "Unknown";
+                return classNames[classId];
+            }
+        }
 
-                }
+        public Dictionary<int, string> ClassNames
+        {
+            get
+            {
+                return classNames;
             }
         }
 

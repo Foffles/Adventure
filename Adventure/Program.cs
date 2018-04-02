@@ -1,5 +1,5 @@
 ﻿using System;
-
+using System.Linq;
 
 namespace Adventure
 {
@@ -23,7 +23,7 @@ namespace Adventure
             Console.WriteLine($"Welcome {Player.Name}. Please enter your hero's name for this run");
             heroName = Console.ReadLine();
 
-            Console.WriteLine($"Please enter {heroName}'s class: \n 1: Warrior \n 2: Healer \n 3: Mage \n 4: Paladin \n 5: Rogue.");
+            Console.WriteLine($"Please enter {heroName}'s class: \n   " + String.Join(Environment.NewLine + "   ", Hero.ClassNames.Select(d => $"{d.Key}: {d.Value}")));
             classId = Console.ReadLine();
 
             switch (classId)

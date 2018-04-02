@@ -46,6 +46,22 @@ namespace Adventure.BusinessObjects
             }
         }
 
+        public string ClassName
+        {
+            get
+            {
+                return hero.ClassName;
+            }
+        }
+
+        public Dictionary<int, string> ClassNames
+        {
+            get
+            {
+                return hero.ClassNames;
+            }
+        }
+
         public int Level
         {
             get
