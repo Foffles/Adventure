@@ -4,31 +4,31 @@ using System.Text;
 
 namespace Adventure.DataAbstraction
 {
-    public class Player
+    class WarriorRoom
     {
-        int playerId;
-        public int PlayerId
+        int warriorRoomId;
+        public int WarriorRoomId
         {
             get
             {
-                return this.playerId;
+                return this.warriorRoomId;
             }
             set
             {
-                this.playerId = value;
+                this.warriorRoomId = value;
             }
         }
 
-        string name;
-        public string Name
+        int roomId;
+        public int RoomId
         {
             get
             {
-                return this.name;
+                return this.roomId;
             }
             set
             {
-                this.name = value;
+                this.roomId = value;
             }
         }
     }

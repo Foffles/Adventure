@@ -4,18 +4,18 @@ using System.Text;
 
 namespace Adventure.DataAbstraction
 {
-    public class Player
+    public class Room
     {
-        int playerId;
-        public int PlayerId
+        int roomId;
+        public int RoomId
         {
             get
             {
-                return this.playerId;
+                return this.roomId;
             }
             set
             {
-                this.playerId = value;
+                this.roomId = value;
             }
         }
 
@@ -31,5 +31,19 @@ namespace Adventure.DataAbstraction
                 this.name = value;
             }
         }
+
+        int sequence;
+        public int Sequence
+        {
+            get
+            {
+                return this.sequence;
+            }
+            set
+            {
+                this.sequence = value;
+            }
+        }
+
     }
 }

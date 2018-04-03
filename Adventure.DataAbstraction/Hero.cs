@@ -14,6 +14,32 @@ namespace Adventure.DataAbstraction
             { 5, "Rogue" }
         };
 
+        int heroId;
+        public int HeroId
+        {
+            get
+            {
+                return this.heroId;
+            }
+            set
+            {
+                this.heroId = value;
+            }
+        }
+
+        int playerId;
+        public int PlayerId
+        {
+            get
+            {
+                return this.playerId;
+            }
+            set
+            {
+                this.playerId = value;
+            }
+        }
+
         string name;
         public string Name
         {

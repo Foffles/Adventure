@@ -4,21 +4,8 @@ using System.Text;
 
 namespace Adventure.DataAbstraction
 {
-    public class Player
+    public class Dungeon
     {
-        int playerId;
-        public int PlayerId
-        {
-            get
-            {
-                return this.playerId;
-            }
-            set
-            {
-                this.playerId = value;
-            }
-        }
-
         string name;
         public string Name
         {
@@ -31,5 +18,6 @@ namespace Adventure.DataAbstraction
                 this.name = value;
             }
         }
+
     }
 }
