@@ -33,5 +33,17 @@ namespace Adventure.DataAbstraction
             }
         }
 
+        string introText;
+        public string IntroText
+        {
+            get
+            {
+                return this.introText;
+            }
+            set
+            {
+                this.introText = value;
+            }
+        }
     }
 }

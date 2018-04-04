@@ -9,7 +9,7 @@ namespace Adventure
         {
             Adventure.BusinessObjects.Player Player = new Adventure.BusinessObjects.Player();
             Adventure.BusinessObjects.Hero Hero = new Adventure.BusinessObjects.Hero();
-
+            Adventure.BusinessObjects.Dungeon Dungeon;
             string playerName;
             string heroName;
             string classId;
@@ -26,6 +26,7 @@ namespace Adventure
             Console.WriteLine($"Please enter {heroName}'s class: \n   " + String.Join(Environment.NewLine + "   ", Hero.ClassNames.Select(d => $"{d.Key}: {d.Value}")));
             classId = Console.ReadLine();
 
+            // Populating hero object
             switch (classId)
             {
                 case "1":
@@ -65,13 +66,19 @@ namespace Adventure
 
             Console.WriteLine($"{Hero.ToString()}");
 
+            Console.WriteLine("Press any key to start your journey...");
+            Console.ReadKey();
+
+            // Add logic to pick a dungeon
+            Dungeon = new Adventure.BusinessObjects.Dungeon(1);
+
+            Dungeon.LaunchDungeon(Hero);
+
 
             Console.WriteLine("Press any key to exit:");
             Console.ReadKey();
 
 
         }
-
-
     }
 }
