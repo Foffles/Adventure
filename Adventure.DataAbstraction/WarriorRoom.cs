@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Adventure.DataAbstraction
 {
-    class WarriorRoom
+    public class WarriorRoom
     {
         int warriorRoomId;
         public int WarriorRoomId

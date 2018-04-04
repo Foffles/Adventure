@@ -19,6 +19,32 @@ namespace Adventure.DataAbstraction
             }
         }
 
+        int warriorRoomId;
+        public int WarriorRoomId
+        {
+            get
+            {
+                return this.warriorRoomId;
+            }
+            set
+            {
+                this.warriorRoomId = value;
+            }
+        }
+
+        WarriorRoom warriorRoom;
+        public WarriorRoom WarriorRoom
+        {
+            get
+            {
+                return this.warriorRoom;
+            }
+            set
+            {
+                this.warriorRoom = value;
+            }
+        }
+
         string name;
         public string Name
         {

@@ -15,6 +15,7 @@ namespace Adventure.BusinessObjects
             room = new DataAbstraction.Room();
         }
 
+
         public string Name
         {
             get
