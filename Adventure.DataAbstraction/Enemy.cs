@@ -4,45 +4,46 @@ using System.Text;
 
 namespace Adventure.DataAbstraction
 {
-    public class WarriorRoom
+    public class Enemy
     {
-        int warriorRoomId;
-        public int WarriorRoomId
+        int enemyId;
+        public int EnemyId
         {
             get
             {
-                return this.warriorRoomId;
+                return this.enemyId;
             }
             set
             {
-                this.warriorRoomId = value;
+                this.enemyId = value;
             }
         }
 
-        int roomId;
-        public int RoomId
+        Ability[] abilities;
+        public Ability[] Abilities
         {
             get
             {
-                return this.roomId;
+                return this.abilities;
             }
             set
             {
-                this.roomId = value;
+                this.abilities = value;
             }
         }
 
-        Enemy[] enemies;
-        public Enemy[] Enemies
+        string name;
+        public string Name
         {
             get
             {
-                return this.enemies;
+                return this.name;
             }
             set
             {
-                this.enemies = value;
+                this.name = value;
             }
         }
+
     }
 }
